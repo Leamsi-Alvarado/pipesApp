@@ -6,8 +6,18 @@
 <div class="grid mt-2">
 
   <div class="col-4">
-    <p-card header="uppercase">
-      {{ 2  }}
+    <p-card header="Ventas Netas">
+      {{ totalSells + 121 | number: '1.2-2'}}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ventas Netas">
+      {{ totalSells | currency:'HNL':'symbol-narrow':'1.4-4'}}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ventas Netas">
+      {{ percent | percent: '1.2-2'}}
     </p-card>
   </div>
 </div>
